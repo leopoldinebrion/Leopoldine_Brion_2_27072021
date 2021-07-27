@@ -1,0 +1,4 @@
+#search_barre {
+    display: flex;
+    flex-wrap: nowrap;
+}
