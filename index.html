@@ -6,42 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e1d22e788f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
 </head>
 
 <body>
+    <div id="blocpage">
+        <!-- Menu-->
+        <header>
+            <div id="logo">
+                <img src="images/logo/Reservia.svg" alt="logo reservia">
+            </div>
+            <nav>
+                <a href="#hebergement-section" class="menu">Hébergements</a>
+                <a href="#activites-section" class="menu">Activités</a>
+            </nav>
+            <a href="#" class="register">S'inscrire</a>
+        </header>
 
-    <!-- Menu-->
-    <header>
-        <div class="logo">
-            <img src="images/logo/Reservia.svg" alt="logo reservia">
-        </div>
-        <nav>
-            <a href="#hebergements">Hébergements</a>
-            <a href="#activites">Activités</a>
-            <a href="">S'inscrire</a>
-        </nav>
-    </header>
+        <main>
+            <!--Recherche-->
+            <section id="search_section">
+                <div class="text">
+                    <h3>Trouvez votre hébergement pour des vacances de rêve</h3d>
+                        <p>En plein centre ville ou en pleine nature</p>
+                </div>
 
-    <main>
-        <!--Recherche-->
-        <div id="search_section">
-            <section>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
+                <div class="search_bar">
+                    <form action="traitement.php" method="POST">
+                        <div class="iconcenter"><i class="fas fa-map-marker-alt"></i></div>
+                        <input type="text" id="barre" placeholder="Marseille, France" />
+                        <button type="submit" value="Rechercher">Rechercher</button>
+                    </form>
+                </div>
+
+                <!--Filtres-->
+                <div class="filter">
+                    <h3>Filtres</h3>
+                    <div class="filter_direction">
+                        <i class="fas fa-money-bill-wave filter_icon"></i>
+                        <span>Économique</span>
+                    </div>
+                    <div class="filter_direction">
+                        <i class="fas fa-child filter_icon"></i>
+                        <span>Familial</span>
+                    </div>
+                    <div class="filter_direction">
+                        <i class="fas fa-heart filter_icon"></i>
+                        <span>Romantique</span>
+                    </div>
+                    <div class="filter_direction">
+                        <i class="fas fa-dog filter_icon"></i>
+                        <span>Animaux autorisés</span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <i class="fas fa-info radiusinfo"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
             </section>
 
-            <div id="search_barre">
-                <div class="geolocation_icon">
-                    <i class="fas fa-map-marker-alt"></i>
+            <section id="hebergement-section">
+                <div class="hebergements-marseille">
+                    <h3>Hébergements à Marseille</h3>
+                        <div class="bloc1">
+                            <div class="vignette">
+                                <a href="#">
+                                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                                    <h4>Auberge la Cannebière</h4>
+                                    <p>Nuit à partir de 25€</p>
+                                </a>
+                            </div>
+                            <div class="vignette">
+                                <a href="#">
+                                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                                    <h4>Hôtel du port</h4>
+                                    <p>Nuit à partir de 52€</p>
+                                </a>
+                            </div>
+                            <div class="vignette">
+                                <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
+                                <h4>Hôtel Les mouettes</h4>
+                                <p>Nuit à partir de 76€</p>
+                            </div>
+                        </div>
                 </div>
-                <input type="text" id="barre" placeholder="Marseille, France" />
-                <input type="submit" value="Rechercher" />
-                </form>
+                <div class="populaire">
+                    <h3>Les plus populaires</h3>
+                </div>
+            </section>
             </div>
-        </div>
-
 </body>
 
 </html>

@@ -1,4 +1,183 @@
-#search_barre {
+body {
+    font-family: Raleway;
+    margin: 5px 15px 5px 15px;
+}
+
+#blocpage {
+    margin: auto;
+    width: 100%;
+}
+
+/** HEADER **/
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    margin-left: auto;
+}
+
+#logo {
+}
+
+.menu {
+    margin-right: 60px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu, .register {
+    width: 140px;
+    height: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.menu:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.register {
+    color: #0065FC;
+    text-decoration: none;
+}
+
+.register:hover {
+    font-weight: bold;
+}
+
+
+/* PARTIE RECHERCHE + FILTRES */
+
+.text {
+    line-height: 0.8em;
+}
+
+.text p {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+/** PARTIE BARRE RECHERCHE **/
+
+
+form i {
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    padding: 12px 14px 12px 14px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form input {
+    border: 1px solid #F2F2F2;
+    font-weight: bold;
+    padding: 12px 14px 12px 10px;
+    color: black;
+}
+
+#barre::placeholder {
+    color: black;
+}
+
+form button {
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    padding: 12px 14px 12px 10px;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+/** PARTIE FILTRES **/
+
+.filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.filter span {
+    padding-right: 12px;
+}
+
+.filter_direction {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid #DEEBFF;
+    border-radius: 30px 30px 30px 30px;
+    margin-left: 20px;
+}
+
+.filter_icon {
+    margin-right: 0.8em;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    height: 41px;
+    width: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.radiusinfo {
+    border : 1px solid black;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+/*** HEBERGEMENTS MARSEILLE ***/
+
+#hebergement-section {
+display: flex;
+}
+
+.hebergements-marseille {
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+}
+
+.populaire {
+    flex: 1;
+    height : 650px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+}
+
+.vignette img {
+    height : 120px;
+    border-radius: 15px 15px 0px 0px;
 }
