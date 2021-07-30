@@ -1,11 +1,9 @@
 body {
     font-family: Raleway;
-    margin: 5px 15px 5px 15px;
 }
 
 #blocpage {
-    margin: auto;
-    width: 100%;
+    margin: 20px;
 }
 
 /** HEADER **/
@@ -13,20 +11,12 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    
 }
 
-header nav {
-    display: flex;
-    margin-left: auto;
-}
-
-#logo {
-}
-
-.menu {
-    margin-right: 60px;
-    margin-left: 100px;
-    text-align: center;
+nav a {
+    margin: 20px;
 }
 
 a {
@@ -34,19 +24,19 @@ a {
     color: black;
 }
 
-.menu, .register {
-    width: 140px;
-    height: 99px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.menu {
+    padding-top: 20px;
+    text-align: center;
 }
+
+
 
 a.menu:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
     font-weight: bold;
     justify-content: center;
+    transition-duration: 0.2s;
 }
 
 .register {
@@ -112,6 +102,8 @@ form button {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .filter span {
@@ -125,11 +117,13 @@ form button {
     border: 1px solid #DEEBFF;
     border-radius: 30px 30px 30px 30px;
     margin-left: 20px;
+    
 }
 
 .filter_icon {
     margin-right: 0.8em;
     background-color: #DEEBFF;
+    border : 1px solid #DEEBFF;
     border-radius: 50%;
     height: 41px;
     width: 41px;
@@ -154,30 +148,170 @@ form button {
     align-items: center;
     justify-content: center;
     margin-right: 5px;
+    font-size: 0.8em;
+}
+
+.filter_direction:hover {
+    transition-duration: 0.5s;
+    border: 1px solid #0065fc;
+}
+
+.filter_icon:hover {
+    transition-duration: 0.5s;
+    background-color: #0065FC;
+    color: white;
 }
 
 /*** HEBERGEMENTS MARSEILLE ***/
 
-#hebergement-section {
-display: flex;
+#hebergement_section {
+    display: flex;
+    margin-top: 20px;
+    height: 580px;
 }
 
 .hebergements-marseille {
     flex: 2;
-    height: 650px;
+
     margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
     border-radius: 15px;
     background-color: #F2F2F2;
 }
 
-.populaire {
-    flex: 1;
-    height : 650px;
+.bloc1 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+.vignette {
+    background-color: white;
+    padding: 3px;
     border-radius: 15px;
-    background-color: #F2F2F2;
+    height: 200px;
+    width: 30%;
+    box-shadow: 0px 0px 7px #c9c9c9
 }
 
 .vignette img {
+    width: 100%;
     height : 120px;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+  }
+
+
+.hebergement-info {
+   padding-top: 0px;
+   line-height: 0px;
+   padding-left: 10px;
+   font-size: 0.9em;
+}
+
+
+.bluestar {
+    color: #0065fc;
+    font-size: 11px;
+}
+
+.greystar {
+    color: #F2F2F2;
+    font-size: 11px;
+}
+
+.bloc2 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+.more {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+/*** POPULAIRES ***/
+
+.populaire {
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+}
+
+.populaire_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    padding-right: 20px;
+}
+
+.vignette_populaire {
+    width: 90%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    background-color: white;
+    padding: 3px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px #c9c9c9;
+    height: 130px;
+}
+
+.vignette_populaire img {
+    width: 25%;
+    height: 130px;
+    border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
+  }
+
+  .flex_populaire {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .populaire_info {
+    padding-top: 0px;
+    line-height: 0px;
+    padding-left: 10px;
+    font-size: 0.9em;
+  }
+
+  /*** ACTIVITES ***/ 
+
+.activites {
+    margin-top: 20px;
+}
+
+
+/*** FOOTER ***/
+
+footer {
+    background-color: #F2F2F2;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.bloc_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.liste {
+    list-style: none;
+    padding-left: 0px;
+    font-size: 0.9em;
+    line-height: 28px;
+    margin-top: 0px;
 }
