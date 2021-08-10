@@ -1,12 +1,8 @@
 body {
     font-family: Raleway;
     margin: 0px;
-    width: 100%;
-}
-
-#margin {
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 80%;
+    margin: auto;
 }
 
 h4 {
@@ -61,10 +57,6 @@ a.menu:hover {
 
 
 /* PARTIE RECHERCHE + FILTRES */
-
-.text {
-    line-height: 0.8em;
-}
 
 .text p {
     font-weight: lighter;
@@ -219,11 +211,13 @@ form button {
 
 
 .hebergement-info {
-   padding-top: 0px;
-   line-height: 0px;
-   padding-left: 10px;
+   margin-top: -15px; 
+   margin-left: 5px;
 }
 
+.hebergement-info p {
+    margin-top: -1em;
+}
 
 .bluestar {
     color: #0065fc;
@@ -244,7 +238,7 @@ form button {
 
 .more {
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /*** POPULAIRES ***/
@@ -342,6 +336,7 @@ form button {
 .img_activites {
     object-fit: cover;
     background-position: center;
+    border-radius: 15px 15px 0px 0px;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -358,6 +353,8 @@ form button {
 footer {
     background-color: #F2F2F2;
     margin-top: 40px;
+    margin-left: -150px;
+    margin-right: -150px;
     padding-top: 20px;
     padding-left: 20px;
     display: flex;
@@ -381,17 +378,7 @@ footer {
 
 /*** MEDIA QUERIES ***/
 
-@media screen and (max-width: 1024px) {
-    .filter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .filter_direction {
-        margin-bottom: 5px;
-   }
-
+@media screen and (max-width: 1024px) {    
     #hebergement_section {
         display: flex;
         flex-direction: column-reverse;
@@ -399,27 +386,58 @@ footer {
 
     .hebergements-marseille {
         margin-right: 0px;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /** #search_icon {
-        display: block;
-        border-radius: 15px;
-        right: -50px;
-    
+        background-color: white;
     }
 
-    form button {
-        display: none;
+    .bloc1 {
+        flex-wrap: wrap;
+        margin-bottom: 0px;
     }
 
+    .bloc2 {
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    .vignette {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bloc_activites {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+          }
+
+    .vignette_activites {
+        overflow: visible;
+        height: 250px;
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+        #search_icon {
+            display: block;
+            border-radius: 15px;
+            position: relative;
+            right: 20px;
+        }
+        form button {
+            display: none;
+        }
+        .filter {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
     
-  
-}
+        .filter_direction {
+            margin-bottom: 5px;
+       }
+        footer {
+           display: flex;
+           flex-direction: column;
+           padding-left: 150px;
+       }   
+    }
