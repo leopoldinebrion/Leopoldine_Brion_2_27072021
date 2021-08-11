@@ -15,18 +15,22 @@
 <body>
     <!-- Menu-->
     <header>
-        <div id="logo">
+        <div class="logo">
             <img src="images/logo/Reservia.svg" alt="logo reservia">
         </div>
         <nav>
-            <a href="#hebergement_section" class="menu">Hébergements</a>
-            <a href="#activites_section" class="menu">Activités</a>
-            <a href="#" class="register">S'inscrire</a>
+            <div class="menu">
+                <ul>
+                <li><a href="#hebergement_section" class="menu_style">Hébergements</a></li>
+                <li><a href="#activites_section" class="menu_style">Activités</a></li>
+            </ul>
+            </div> 
+                <a href="#" class="register">S'inscrire</a>
         </nav>
     </header>
 
     <!--Recherche-->
-    <section id="search_section">
+    <section id="search_section" class="margin">
         <div class="text">
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
             <p>En plein centre ville ou en pleine nature</p>
@@ -70,7 +74,7 @@
 
     <!-- PARTIE HEBERGEMENTS-->
 
-    <section id="hebergement_section">
+    <section id="hebergement_section" class="margin">
         <div class="hebergements-marseille">
             <h3>Hébergements à Marseille</h3>
             <div class="bloc1">
@@ -247,7 +251,7 @@
         </div>
     </section>
 
-    <section id="activites_section">
+    <section id="activites_section" class="margin">
         <h3>Activités à Marseille</h3>
         <div class="bloc_activites">
             <a class="vignette_activites card1" href="#">

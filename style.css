@@ -1,8 +1,11 @@
 body {
     font-family: Raleway;
     margin: 0px;
-    width: 80%;
-    margin: auto;
+}
+
+.margin {
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 h4 {
@@ -13,31 +16,45 @@ p {
     font-size: 0.8em;
 }
 
-/** HEADER **/
-
-header {
-    margin-top: 20px;
-   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-nav a {
-    margin: 20px;
-}
-
 a {
     text-decoration: none;
     color: black;
 }
 
-.menu {
-    padding-top: 20px;
-    text-align: center;
+/** HEADER **/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
 }
 
-a.menu:hover {
+nav {
+    display: flex;
+    align-items: baseline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+.menu_style {
+    margin-right: 50px;
+    padding-top: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.register {
+    color: #0065FC;
+}
+
+.menu_style:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
     font-weight: bold;
@@ -45,16 +62,9 @@ a.menu:hover {
     transition-duration: 0.2s;
 }
 
-.register {
-    color: #0065FC;
-    text-decoration: none;
-    width: 80%;
-}
-
 .register:hover {
     font-weight: bold;
 }
-
 
 /* PARTIE RECHERCHE + FILTRES */
 
@@ -225,7 +235,7 @@ form button {
 }
 
 .greystar {
-    color: #F2F2F2;
+    color: #f2f2f2;
     font-size: 11px;
 }
 
@@ -353,8 +363,6 @@ form button {
 footer {
     background-color: #F2F2F2;
     margin-top: 40px;
-    margin-left: -150px;
-    margin-right: -150px;
     padding-top: 20px;
     padding-left: 20px;
     display: flex;
@@ -414,9 +422,40 @@ footer {
         overflow: visible;
         height: 250px;
     }
-    }
+}
+
+/***  ***/
 
     @media screen and (max-width: 600px) {
+        nav {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            width: 100vw;
+        }
+
+        .logo {
+            position: absolute;
+        }
+
+        .register {
+            margin-top: 15px;
+        }
+
+        .menu {
+            padding-top: 30px;
+            width: 100%;
+        }
+
+        .menu li {
+            width: 50%;
+        }
+
+        .menu a {
+            display: inline-block;
+            border-bottom: 5px solid black;
+            padding-bottom: 15px;
+        }
+
         #search_icon {
             display: block;
             border-radius: 15px;
@@ -438,6 +477,5 @@ footer {
         footer {
            display: flex;
            flex-direction: column;
-           padding-left: 150px;
        }   
     }
